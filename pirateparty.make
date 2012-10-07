@@ -18,17 +18,18 @@ projects[pirateparty_installation_profile][download][url] = "git://github.com/be
 
 ;	Libraries
 
-libraries[tinymce][download][type] = "get"	
-libraries[tinymce][download][url] = "https://github.com/downloads/tinymce/tinymce/tinymce_3.4.8.zip"
-libraries[tinymce][destination] = "libraries"
-
-libraries[tinymce][download][type] = "get"	
-libraries[tinymce][download][url] = "https://github.com/downloads/gilbitron/Nivo-Slider/nivo-slider3.1.zip"
-libraries[tinymce][destination] = "libraries"
-
 libraries[PIE][download][type] = "get"	
 libraries[PIE][download][url] = "http://css3pie.com/download-latest"
 libraries[PIE][destination] = "libraries"
+
+libraries[tinymce][download][type] = "get"	
+libraries[tinymce][download][url] = "https://github.com/downloads/tinymce/tinymce/tinymce_3.5.7.zip"
+libraries[tinymce][destination] = "libraries"
+
+libraries[jquery.cycle][download][type] = "git"	
+libraries[jquery.cycle][download][revision] = "master"
+libraries[jquery.cycle][download][url] = "git://github.com/malsup/cycle.git"
+libraries[jquery.cycle][destination] = "libraries"
 
 
 ; Projects
@@ -162,8 +163,8 @@ projects[views][version] = "3"
 projects[video_embed_field][subdir] = "contrib"
 projects[video_embed_field][version] = "2"
 
-projects[views_nivo_slider][subdir] = "contrib"
-projects[views_nivo_slider][version] = "3"
+projects[views_slideshow][subdir] = "contrib"
+projects[views_slideshow][version] = "3"
 
 projects[views_bulk_operations][subdir] = "contrib"
 projects[views_bulk_operations][version] = "3"
