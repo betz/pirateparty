@@ -83,6 +83,9 @@ projects[libraries][version] = "1"
 projects[linkit][subdir] = "contrib"
 projects[linkit][version] = "1"
 
+projects[markdown][subdir] = "contrib"
+projects[markdown][version] = "1"
+
 projects[mollom][subdir] = "contrib"
 projects[mollom][version] = "1"
 

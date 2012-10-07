@@ -37,6 +37,7 @@ dependencies[] = libraries
 dependencies[] = linkit
 dependencies[] = list
 dependencies[] = menu
+dependencies[] = markdown
 dependencies[] = mollom
 dependencies[] = number
 dependencies[] = options
