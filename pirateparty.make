@@ -1,12 +1,43 @@
 core = 7.15
 api = 2
 
+
 ; Drupal
 
 projects[drupal][type] = core
 projects[drupal][version] = 7.15
 
+
+;	Profile
+
+projects[pirateparty_installation_profile][type] = "profile"
+projects[pirateparty_installation_profile][download][type] = "git"
+projects[pirateparty_installation_profile][download][revision] = "master"
+projects[pirateparty_installation_profile][download][url] = "git://github.com/betz/pirateparty_installation_profile.git"
+
+
+;	Libraries
+
+libraries[tinymce][download][type] = "get"	
+libraries[tinymce][download][url] = "https://github.com/downloads/tinymce/tinymce/tinymce_3.4.8.zip"
+libraries[tinymce][destination] = "libraries"
+
+libraries[tinymce][download][type] = "get"	
+libraries[tinymce][download][url] = "https://github.com/downloads/gilbitron/Nivo-Slider/nivo-slider3.1.zip"
+libraries[tinymce][destination] = "libraries"
+
+libraries[PIE][download][type] = "get"	
+libraries[PIE][download][url] = "http://css3pie.com/download-latest"
+libraries[PIE][destination] = "libraries"
+
+
 ; Projects
+
+projects[pirateparty_workgroup][type] = "module"
+projects[pirateparty_workgroup][subdir] = "custom"
+projects[pirateparty_workgroup][download][type] = "git"
+projects[pirateparty_workgroup][download][revision] = "master"
+projects[pirateparty_workgroup][download][url] = "git://github.com/betz/pirateparty_workgroup.git"
 
 projects[admin_menu][subdir] = "contrib"
 projects[admin_menu][version] = "3"
@@ -30,7 +61,7 @@ projects[devel][subdir] = "contrib"
 projects[devel][version] = "1"
 
 projects[ds][subdir] = "contrib"
-projects[ds][version] = "1"
+projects[ds][version] = "2"
 
 projects[diff][subdir] = "contrib"
 projects[diff][version] = "2"
@@ -55,12 +86,6 @@ projects[features_override][version] = "2"
 
 projects[features_plumber][subdir] = "contrib"
 projects[features_plumber][version] = "1"
-
-projects[field_collection][subdir] = "contrib"
-projects[field_collection][version] = "1"
-
-projects[field_collection_table][subdir] = "contrib"
-projects[field_collection_table][version] = "1"
 
 projects[filefield_paths][subdir] = "contrib"
 projects[filefield_paths][version] = "1"
@@ -110,11 +135,6 @@ projects[pathauto][version] = "1"
 projects[pathologic][subdir] = "contrib"
 projects[pathologic][version] = "1"
 
-projects[pirateparty_workgroup][type] = "module"
-projects[pirateparty_workgroup][subdir] = "custom"
-projects[pirateparty_workgroup][download][type] = "git"
-projects[pirateparty_workgroup][download][url] = "git://github.com/betz/pirateparty_workgroup.git"
-
 projects[redirect][subdir] = "contrib"
 projects[redirect][version] = "1"
 
@@ -136,11 +156,14 @@ projects[token][version] = "1"
 projects[transliteration][subdir] = "contrib"
 projects[transliteration][version] = "3"
 
+projects[views][subdir] = "contrib"
+projects[views][version] = "3"
+
 projects[video_embed_field][subdir] = "contrib"
 projects[video_embed_field][version] = "2"
 
-projects[views][subdir] = "contrib"
-projects[views][version] = "3"
+projects[views_nivo_slider][subdir] = "contrib"
+projects[views_nivo_slider][version] = "3"
 
 projects[views_bulk_operations][subdir] = "contrib"
 projects[views_bulk_operations][version] = "3"
@@ -153,15 +176,5 @@ projects[wysiwyg_fields][version] = "1"
 
 projects[wysiwyg_filter][subdir] = "contrib"
 projects[wysiwyg_filter][version] = "1"
-
-libraries[tinymce][download][type] = "get"	
-libraries[tinymce][download][url] = "https://github.com/downloads/tinymce/tinymce/tinymce_3.4.8.zip"
-libraries[tinymce][destination] = "libraries"
-
-libraries[PIE][download][type] = "get"	
-libraries[PIE][download][url] = "http://css3pie.com/download-latest"
-libraries[PIE][destination] = "libraries"
-
-
 
 
