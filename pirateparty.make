@@ -1,10 +1,7 @@
-core = 7.16
-api = 2
-
 ; Drupal
 
-projects[drupal][type] = core
-projects[drupal][version] = 7.16
+core = 7.x
+api = 2
 
 
 ;	Profile
