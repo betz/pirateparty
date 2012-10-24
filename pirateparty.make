@@ -1,11 +1,10 @@
-core = 7.15
+core = 7.16
 api = 2
-
 
 ; Drupal
 
 projects[drupal][type] = core
-projects[drupal][version] = 7.15
+projects[drupal][version] = 7.16
 
 
 ;	Profile
@@ -150,6 +149,9 @@ projects[spamspan][version] = "1"
 
 projects[strongarm][subdir] = "contrib"
 projects[strongarm][version] = "2"
+
+projects[taxonomy_menu][subdir] = "contrib"
+projects[taxonomy_menu][version] = "1"
 
 projects[token][subdir] = "contrib"
 projects[token][version] = "1"
