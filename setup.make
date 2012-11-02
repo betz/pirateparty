@@ -34,7 +34,7 @@ libraries[jquery.cycle][destination] = "libraries"
 ; Themes
 projects[tao][version] = "3"
 projects[rubik][version] = "4"
-projects[omaga][version] = "3"
+projects[omega][version] = "3"
 
 projects[pirateparty][type] = "theme"
 projects[pirateparty][download][type] = "git"
