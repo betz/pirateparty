@@ -3,13 +3,16 @@
 core = 7.x
 api = 2
 
+projects[drupal][type] = core
+projects[drupal][version] = 7.16
+
 
 ;	Profile
 
-projects[pirateparty_installation_profile][type] = "profile"
-projects[pirateparty_installation_profile][download][type] = "git"
-projects[pirateparty_installation_profile][download][revision] = "master"
-projects[pirateparty_installation_profile][download][url] = "git://github.com/betz/pirateparty_installation_profile.git"
+projects[pirateparty][type] = "profile"
+projects[pirateparty][download][type] = "git"
+projects[pirateparty][download][revision] = "master"
+projects[pirateparty][download][url] = "git://github.com/betz/pirateparty_installation_profile.git"
 
 
 ;	Libraries
@@ -28,16 +31,27 @@ libraries[jquery.cycle][download][url] = "git://github.com/malsup/cycle.git"
 libraries[jquery.cycle][destination] = "libraries"
 
 
+; Themes
+projects[tao][version] = "3"
+projects[rubik][version] = "4"
+projects[omaga][version] = "3"
+
+projects[pirateparty][type] = "theme"
+projects[pirateparty][download][type] = "git"
+projects[pirateparty][download][revision] = "master"
+projects[pirateparty][download][url] = "git://github.com/betz/pirateparty_installation_profile.git"
+
+
 ; Projects
 
 projects[pirateparty_workgroup][type] = "module"
-projects[pirateparty_workgroup][subdir] = "custom"
+projects[pirateparty_workgroup][subdir] = "pirate"
 projects[pirateparty_workgroup][download][type] = "git"
 projects[pirateparty_workgroup][download][revision] = "master"
 projects[pirateparty_workgroup][download][url] = "git://github.com/betz/pirateparty_workgroup.git"
 
-projects[admin_menu][subdir] = "contrib"
-projects[admin_menu][version] = "3"
+projects[admin][subdir] = "contrib"
+projects[admin][version] = "2"
 
 projects[better_formats][subdir] = "contrib"
 projects[better_formats][version] = "1"
