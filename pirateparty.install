@@ -2,6 +2,7 @@
 
 function pirateparty_install() {
 
+  pirateparty_set_default_settings();
   pirateparty_enable_admin_theme();
   pirateparty_setup_content_types();
   pirateparty_create_home_link();
@@ -42,6 +43,35 @@ function pirateparty_install() {
   // Update the menu router information.
   menu_rebuild();
 }
+
+
+/**
+* Set default settings.
+*/
+function pirateparty_set_default_settings () {
+  $default_theme = 'piratepartytheme';
+  $default_theme_admin = 'rubik';
+
+  theme_enable(array($default_theme));
+  theme_enable(array($default_theme_admin));
+
+  variable_set('theme_default', $default_theme);
+  variable_set('admin_theme', $default_theme_admin);
+
+  variable_set('node_admin_theme', '1');
+  variable_set('site_name', 'Snelkoerier.be');
+  variable_set('site_slogan', 'Sneller dan zijn schaduw');
+}
+
+function dispatchprof_create_home_link() {
+  $item = array(
+    'link_title' => st('Home'),
+    'link_path' => '<front>',
+    'menu_name' => 'main-menu',
+  );
+  menu_link_save($item);
+}
+
 
 /**
 * Setup roles, formats and permissions

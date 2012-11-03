@@ -36,6 +36,11 @@ projects[tao][version] = "3"
 projects[rubik][version] = "4"
 projects[omega][version] = "3"
 
+projects[pirateparty][type] = "theme"
+projects[pirateparty][download][type] = "git"
+projects[pirateparty][download][revision] = "master"
+projects[pirateparty][download][url] = "git://github.com/betz/piratepartytheme.git"
+
 
 ; Projects
 
