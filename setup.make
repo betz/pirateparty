@@ -12,7 +12,7 @@ projects[drupal][version] = 7.16
 projects[pirateparty][type] = "profile"
 projects[pirateparty][download][type] = "git"
 projects[pirateparty][download][revision] = "master"
-projects[pirateparty][download][url] = "git://github.com/betz/pirateparty_installation_profile.git"
+projects[pirateparty][download][url] = "git://github.com/betz/pirateparty.git"
 
 
 ;	Libraries
